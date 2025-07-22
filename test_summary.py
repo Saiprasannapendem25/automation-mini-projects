@@ -12,3 +12,7 @@ for line in lines:
 
 print("Total Passed", pass_count)
 print("Total Failed", fail_count)
+
+with open("summary.txt", "w") as f:
+    f.write(f"Total Passed: {pass_count}\n")
+    f.write(f"Total Failed: {fail_count}\n")
